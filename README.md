@@ -37,9 +37,21 @@ See `graphs` for more.
 
 ### Phonemes
 
-English phonemes are not quite Zipfian. They are better approximated by the Yule
-Equation (see [Phoneme Frequencies Follow a Yule Distribution](http://www.skase.sk/Volumes/JTL09/pdf_doc/1.pdf) by Yuri Tambovtsev and Colin Martindale for more).
+English phonemes are not quite Zipfian: my calculations yielded a Zipf Constant
+of 0.22214584). They are better approximated by the Yule Equation (see
+[Phoneme Frequencies Follow a Yule Distribution](http://www.skase.sk/Volumes/JTL09/pdf_doc/1.pdf)
+by Yuri Tambovtsev and Colin Martindale for more).
 
 <p align="center">
 	<img src="https://raw.github.com/markandrus/ZipfianDistribution/master/graphs/EnglishPhonemes.png">
 </p>
+
+Filtering the Data
+------------------
+
+Filtering high-rank words should move the Zipf Constant for any of the above
+languages closer to 1. We could choose our threshold by maximizing $Z$.
+
+In our English sample, the long tail begins to deviate from the Zipfian
+Distribution. Filtering low frequency words should bring $Z$ closer in this
+case.
