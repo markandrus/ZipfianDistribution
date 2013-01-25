@@ -1,7 +1,7 @@
-Zipfian Distributions
-=====================
+ZipfianDistribution
+===================
 
-Computational Linguistics Assignment #2.
+Assignment #2 for my Computational Linguistics Class
 
 Calculated Zipf Constants
 -------------------------
