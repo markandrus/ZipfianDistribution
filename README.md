@@ -50,8 +50,8 @@ Filtering the Data
 ------------------
 
 Filtering high-rank words should move the Zipf Constant for any of the above
-languages closer to 1. We could choose our threshold by maximizing $Z$.
+languages closer to 1. We could choose our threshold by maximizing `Z`.
 
 In our English sample, the long tail begins to deviate from the Zipfian
-Distribution. Filtering low frequency words should bring $Z$ closer in this
+Distribution. Filtering low frequency words should bring `Z` closer in this
 case.
