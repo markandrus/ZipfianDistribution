@@ -6,9 +6,9 @@ Assignment #2 for my Computational Linguistics Class
 Calculated Zipf Constants
 -------------------------
 
-Assume the frequency of a word $freq(w)$ is equal to some language-specific
-constant $Z$ divided by the rank of said word $rank(w)$. What are the average
-values of $Z$, or the "Zipf Constants", of English, Dutch, and the Voynich
+Assume the frequency of a word `freq(w)` is equal to some language-specific
+constant `Z` divided by the rank of said word `rank(w)`. What are the average
+values of `Z`, or the "Zipf Constants", of English, Dutch, and the Voynich
 manuscript?
 
 | Language | Average Zipf Constant |
@@ -22,7 +22,7 @@ Voynich manuscript, implying a closer inverse relationship between frequency and
 rank than in the Voynich manuscript. However, the Voynich manuscript file
 represents a relatively small sample size compared to the English and Dutch
 files used. With more samples of the supposed "language" the Voynich manuscript
-is written in, we might see its Zipf Constant approach $1$.
+is written in, we might see its Zipf Constant approach 1.
 
 Graphs
 ------
