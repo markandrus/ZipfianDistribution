@@ -29,6 +29,17 @@ Graphs
 
 See `graphs` for more.
 
+### Languages
+
 <p align="center">
 	<img src="https://raw.github.com/markandrus/ZipfianDistribution/master/graphs/All.png">
+</p>
+
+### Phonemes
+
+English phonemes are not quite Zipfian. They are better approximated by the Yule
+Equation (see [http://www.skase.sk/Volumes/JTL09/pdf_doc/1.pdf] for more).
+
+<p align="center">
+	<img src="https://raw.github.com/markandrus/ZipfianDistribution/master/graphs/EnglishPhonemes.png">
 </p>

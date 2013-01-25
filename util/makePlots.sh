@@ -5,3 +5,5 @@ do
 done
 
 ./multiplot.gnuplot English Dutch Voynich
+
+./plot.gnuplot EnglishPhonemes 0.22214584

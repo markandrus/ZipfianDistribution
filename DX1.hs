@@ -18,7 +18,7 @@ import Control.Applicative
 import Control.Lens
 import Control.Monad ((>=>), forM, liftM, join)
 import Data.Function (on)
-import Data.List (intersperse, sortBy)
+import Data.List (group, intersperse, sort, sortBy)
 import System.Environment
 import Text.ParserCombinators.Parsec hiding ((<|>), many, count)
 import Text.Parsec.Prim (ParsecT)
@@ -171,3 +171,12 @@ parseDX1FreqsRanksAndZipf contents = case parseDX1 contents of
     let es = ranks . sortByFrequency $ frequencies r
         z  = averageZipfConstant es
     in  unlines $ map show es ++ ['#' : show z]
+
+parseDX1PhonemesToDX1 :: String -> String
+parseDX1PhonemesToDX1 contents = case parseDX1 contents of
+  Left  e -> "Error parsing input: " ++ show e
+  Right r ->
+    let ps = map (\xs@(x:_) -> (x, length xs)) . group . sort
+           $ concatMap (^. phonemes) r
+        es = map (\(p, c) -> DX1Entry p c [p] () ()) ps
+    in  unlines $ map show es

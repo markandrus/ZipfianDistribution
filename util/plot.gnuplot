@@ -15,7 +15,7 @@ gnuplot << EOF
 
 	f(x) = $2/x
 
-	plot "../output/$1.data" u 1:2 notitle w dots, \
+	plot "../output/$1.data" u 1:2 notitle w lines, \
 		f(x) title "$2 / Rank"
 
 	set output "../graphs/$1.png"
